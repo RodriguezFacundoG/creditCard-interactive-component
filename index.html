@@ -5,10 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link type="stylesheet" href="styles.css">
-  
+  <link rel="stylesheet" href="./styles.css">
+  <!-- Linking Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+
+  <!-- End of linking Google Fonts -->
   <script src="index.js"></script>
-  
   <title>Frontend Mentor | Interactive card details form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -27,33 +32,34 @@
         <img src="" alt="">
       </div>
     </section>
-    <sextion class="form__section">
+
+    <section class="form__section">
       <form action="">
         <div class="largeInfo">
           <label>
-            CARDHOLDER NAME
+            <h3>CARDHOLDER NAME</h3>
             <input type="text" placeholder="e.g. Facundo Rodriguez">
           </label>
           <label>
-            CARD NUMBER
+            <h3>CARD NUMBER</h3>
             <input type="text" placeholder="e.g. 1234 5678 9123 0000">
           </label>
         </div>
 
         <div class="shortInfo">
           <label>
-            EXP. DATE (MM/YY)
+            <h3>EXP. DATE (MM/YY)</h3>
             <input type="number" placeholder="MM">
             <input type="number" placeholder="YY">
           </label>          
           <label>
-            CVC
+            <h3>CVC</h3>
             <input type="text" placeholder="e.g. 123">
           </label>
         </div>
         <input type="submit" value="Confirm">
       </form>
-    </sextion>
+    </section>
   </main>
 
   <!-- Completed state start -->
