@@ -1,1 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+html {
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+}
+
+section.design__section{
+    height: 200px;
+    
+    background-image: url("/images/bg-main-mobile.png") ;
+}
+
+.form__section{
+    background-color: lightgrey;
+}
+div.large__info{
+    display: flex;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
