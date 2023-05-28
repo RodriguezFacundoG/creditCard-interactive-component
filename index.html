@@ -10,8 +10,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  
   <!-- End of linking Google Fonts -->
   <script src="index.js"></script>
   <title>Frontend Mentor | Interactive card details form</title>
@@ -36,24 +36,24 @@
     <section class="form__section">
       <form action="">
         <div class="largeInfo">
-          <label>
-            <h3>CARDHOLDER NAME</h3>
+          <label class="largeInfo__name">
+            <span>CARDHOLDER NAME</span>
             <input type="text" placeholder="e.g. Facundo Rodriguez">
           </label>
-          <label>
-            <h3>CARD NUMBER</h3>
+          <label class="largeInfo__number">
+            <span>CARD NUMBER</span>
             <input type="text" placeholder="e.g. 1234 5678 9123 0000">
           </label>
         </div>
 
         <div class="shortInfo">
-          <label>
-            <h3>EXP. DATE (MM/YY)</h3>
+          <label class="shortInfo__expirationDate">
+            <span>EXP. DATE (MM/YY)</span>
             <input type="number" placeholder="MM">
             <input type="number" placeholder="YY">
           </label>          
-          <label>
-            <h3>CVC</h3>
+          <label class="shortInfo__securityCode">
+            <span>CVC</span>
             <input type="text" placeholder="e.g. 123">
           </label>
         </div>
