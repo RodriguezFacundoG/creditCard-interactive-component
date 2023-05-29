@@ -3,25 +3,94 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     font-size: 18px;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+main{
+    height: 95%;
+}
+footer{
+    height: 5%;
 }
 
+
+span{
+    display: block; /*don´t need it bc already have 100% of input width */
+    color:hsl(278, 68%, 11%);
+    font-size: 0.65rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 9px;
+}
 section.design__section{
-    height: 200px;
-    
+    height: 200px;    
     background-image: url("/images/bg-main-mobile.png") ;
 }
 
 .form__section{
-    background-color: lightgrey;
+    width: 100vw;
 }
-div.large__info{
+
+.large__info{
     display: flex;
+    justify-content: center;
+}
+.largeInfo label {
+    width:100%;
+}
+label{
+    margin: 15px 0;
 }
 form{
+    width: 80vw;
+    margin-inline: auto;    
+}
+.largeInfo{
     display: flex;
     flex-direction: column;
+}
+.shortInfo{
+    display: flex;
+    /* justify-content: space-between; There's no need of using this bc we have 50% space usage between the 2 elements */
+    align-items: flex-end;
+}
+
+input{
+    color: hsl(279, 6%, 55%);
+    font-weight: 500;
+    font-size: 0.85rem;
+    padding: 10px;
+    border-radius: 7px;
+    border: solid 1.4px hsl(270, 3%, 87%);
+    width: 100%;
+}
+.submitButton {
+    width: 100%;
+    background-color:  hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);    
+    margin: 5px 0;
+    border: none;
+    letter-spacing: 0.03rem;
+}
+.shortInfo__expirationDate {
+    width: 50%;
+}
+.tinyInputs input {
+    margin-right: 8px;
+    width: 50%
+}
+.shortInfo__securityCode {
+    width: 50%;
+    margin-left: 10px;
+}
+
+.tinyInputs {
+    display: flex;
+    /* justify-content: space-between; There's no need of using this bc we have 50% space usage between the 2 elements */
+    align-items: center;
+    
 }
